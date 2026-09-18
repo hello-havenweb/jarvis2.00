@@ -1,0 +1,58 @@
+# Permission Levels: SAFE, CONFIRM, DANGEROUS, BLOCKED
+
+permissions:
+  # SAFE — no confirmation needed
+  safe:
+    - read_file
+    - list_files
+    - search_files
+    - system_info
+    - open_application
+    - show_time
+    - show_date
+    - clipboard_read
+    - take_screenshot
+    - show_memory
+    - show_reminders
+    - show_progress
+    - web_search
+    - navigate_url
+    - read_email
+    - search_email
+    - haven_search
+    - haven_read
+
+  # CONFIRM — user must confirm
+  confirm:
+    - send_email
+    - send_whatsapp
+    - delete_file
+    - move_file
+    - rename_file
+    - create_folder
+    - copy_file
+    - modify_haven
+    - shutdown_pc
+    - restart_pc
+    - lock_pc
+    - batch_process
+    - bulk_operation
+    - browser_fill_form
+    - browser_click
+
+  # DANGEROUS — extra warning
+  dangerous:
+    - delete_folder_recursive
+    - format_drive
+    - modify_system_settings
+    - install_software
+    - bulk_delete
+
+  # BLOCKED — never allowed
+  blocked:
+    - execute_arbitrary_code
+    - access_credentials
+    - modify_security_settings
+    - disable_antivirus
+    - keylogger
+    - network_scan_unauthorized
